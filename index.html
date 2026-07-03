@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyTotalFit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Kantumruy+Pro:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<!--Screen 1-->
+<div class="screen splash active" id="s1">
+    <div class="icon">
+        <img src="dumbbell.png" alt="MyTotalFit logo">
+    </div>
+    <h1 class="app_name">MYTOTALFIT</h1>
+</div>
+
+<!-- Welcome 1  -->
+<div class="screen welcome1" id="s2">
+    <div class="top">
+        <div class="icon">
+            <img src="dumbbell.png" alt="logo">
+        </div>
+        <h1>Welcome!</h1>
+        <p>I am your Personal coach</p>
+    </div>
+     <br><br>
+    <div class="bottom">
+        <button class="btn" onclick="goTo('s3')">Start Now</button>
+    </div>
+</div>
+
+<!--  Welcome 2 -->
+<div class="screen welcome2" id="s3">
+    <div class="top">
+        <div class="icon">
+            <img src="dumbbell.png" alt="logo">
+        </div>
+        <h1>Welcome!</h1>
+        <p>here are some questions tailor
+             a personalized plan you.</p>
+    </div>
+ <br><br>
+    <div class="bottom">
+        <button class="btn" onclick="goTo('s4')">Start Now</button>
+    </div>
+</div>
+
+<div class="screen gender" id="s4">
+
+    <div class="topbar">
+        <button class="back" onclick="goTo('s3')">←</button>
+        <button class="skip" onclick="goTo('s5')">Skip</button>
+    </div>
+
+    <div class="dots">
+        <span class="red"></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+ <br><br>
+    <h2>What is your <span>Gender</span>?*</h2>
+
+    <div class="tip-box">
+        <div class="tip-icon">
+            <img src="dumbbell.png" alt="tip icon">
+        </div>
+        <p>This will help us tailor your workout to match your metabolic profile.</p>
+    </div>
+
+   <div class="gender-cards">
+
+    <div class="card" id="male" onclick="pick('male')">
+        <div class="tick">✓</div>
+        <div class="person">
+            <img src="male.png" alt="Male">
+        </div>
+        <div class="name">Male</div>
+    </div>
+
+    <div class="card" id="female" onclick="pick('female')">
+        <div class="tick">✓</div>
+        <div class="person">
+            <img src="female.png" alt="Female">
+        </div>
+        <div class="name">Female</div>
+    </div>
+
+</div>
+
+ <br>
+    <div class="other" onclick="goTo('s5')">Other / I'd not say</div>
+
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Goals</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Kantumruy+Pro:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="female.css">
+</head>
+<body>
+
+<div class="screen splash active" id="s1">
+    <div class="splash-icon">
+        <img src="dumbbell.png" alt="logo">
+    </div>
+    <h1 class="splash-title">Fitness Goals</h1>
+</div>
+<div class="screen" id="s2">
+
+    <div class="topbar">
+    <button class="back" onclick="goBackToGender()">←</button>
+        <button class="skip" onclick="goTo('s3')">Skip</button>
+    </div>
+
+    <div class="dots">
+        <span class="dot red"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+ <br>
+    <h2 class="goal-heading">What is your main <span>fitness goal</span>?</h2>
+<br><br>
+    <div class="goal-grid">
+
+        <div class="goal-card selected" id="goal-lose" onclick="pickGoal('goal-lose', 's3-lose')">
+            <div class="goal-tick">✓</div>
+            <img src="f1.png" alt="Lose Weight">
+            <div class="goal-label">Lose weight</div>
+        </div>
+
+        <div class="goal-card" id="goal-muscle" onclick="pickGoal('goal-muscle', 's3-muscle')">
+            <div class="goal-tick">✓</div>
+            <img src="f2.png" alt="Build Muscle">
+            <div class="goal-label">Build Muscle</div>
+        </div>
+
+        <div class="goal-card" id="goal-fit" onclick="pickGoal('goal-fit', 's3-fit')">
+            <div class="goal-tick">✓</div>
+            <img src="f3.png" alt="Keep Fit">
+            <div class="goal-label">Keep Fit</div>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="screen info-screen" id="s3-lose">
+    <div class="topbar">
+        <button class="back" onclick="goTo('s2')">←</button>
+        <button class="skip" onclick="goTo('s4')">Skip</button>
+    </div>
+    <div class="dots">
+        <span class="dot red"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+    <div class="info-body">
+        <div class="info-img">
+            <img src="weightloss.png" alt="Weight loss">
+        </div>
+        <h3 class="info-title">Weight loss made easy</h3>
+        <p class="info-desc">With our simple workouts, you will burn fast fat and make your dream figure in reality!</p>
+    </div>
+    <div class="bottom">
+        <button class="btn" onclick="goTo('s4')">Next</button>
+    </div>
+</div>
+
+
+<div class="screen info-screen" id="s3-muscle">
+    <div class="topbar">
+        <button class="back" onclick="goTo('s2')">←</button>
+        <button class="skip" onclick="goTo('s4')">Skip</button>
+    </div>
+    <div class="dots">
+        <span class="dot red"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+    <div class="info-body">
+        <div class="info-img">
+            <img src="musclegain.png" alt="Muscle gain">
+        </div>
+        <h3 class="info-title">Muscle gain at smart rhythm</h3>
+        <p class="info-desc">Efficient muscle gain requires pairing exercise with recovery. We'll help you find the ideal balance!</p>
+    </div>
+    <div class="bottom">
+        <button class="btn" onclick="goTo('s4')">Next</button>
+    </div>
+</div>
+<div class="screen info-screen" id="s3-fit">
+    <div class="topbar">
+        <button class="back" onclick="goTo('s2')">←</button>
+        <button class="skip" onclick="goTo('s4')">Skip</button>
+    </div>
+    <div class="dots">
+        <span class="dot red"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+    <div class="info-body">
+        <div class="info-img">
+            <img src="keepfit.png" alt="Fitness without fatigue">
+        </div>
+        <h3 class="info-title">Fitness without fatigue</h3>
+        <p class="info-desc">Health lies in persistence, not exhaustion. With minutes a day, you'll find a better self.</p>
+    </div>
+    <div class="bottom">
+        <button class="btn" onclick="goTo('s4')">Next</button>
+    </div>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html> 
